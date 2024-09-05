@@ -1,8 +1,4 @@
-.passage{
-    text-indent: 2em;
-    font: 14pt 思源宋体,宋体;
-    background-color: #ffffff90;
-}
+
 a{
     font-size: 20px;
     text-decoration: none;
@@ -13,9 +9,4 @@ h1{
 body{
     max-width: 1000px;
     margin: 0 auto;
-}
-#passageTitle{
-    text-align: center; 
-    font: 22.0pt 思源宋体,宋体;
-    text-indent: 0;
 }
