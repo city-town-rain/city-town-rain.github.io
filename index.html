@@ -4,27 +4,46 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>城镇雨</title>
         <style>
-            .bilibili{
-                width: 60%;
-                height:60%;
+            body{
+                position: relative;
+                top: 200px;
             }
-            
+            h1{
+                text-align:center;
+                position:relative;
+                bottom: 10px;
+            }
+            .menu{
+                display: inline-block;
+                text-align: center;
+                margin:0 90px;
+            }
+            .menu:hover{
+                box-shadow: 0 0 10px #858585;
+            }
+            #surbscribe{
+                display:none;
+            }
         </style>
         <link rel="stylesheet" href=".\css\main.css">
     </head>
     <body>
         <h1>欢迎来到城镇雨的游戏解说</h1>
-        <a href="https://www.acfun.cn/u/43824214">A站</a>
-        <a href="https://space.bilibili.com/353449145">B站</a>
-        <a href="https://weibo.com/u/7480396703">微博</a>
-        <div>视频</div>
-        <p>晴空雨3：第一集</p>
-        <iframe class="bilibili" src="https://player.bilibili.com/player.html?isOutside=true&aid=593056170&bvid=BV1jq4y1y7Zk&cid=482907775&p=1&autoplay=false" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-        <p>晴空雨3：第二集</p>
-        <iframe class="bilibili" src="https://player.bilibili.com/player.html?isOutside=true&aid=593768067&bvid=BV1Lq4y1b7ad&cid=503274382&p=1&autoplay=false" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-        <p>晴空雨3：第三集</p>
-        <iframe class="bilibili" src="https://player.bilibili.com/player.html?isOutside=true&aid=509238298&bvid=BV1nu411X7WX&cid=511187587&p=1&autoplay=false" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-        <div>博客</div>
-        <a href=".\webs\dreamWorldCommic.html">中国最早的有关ACG的评论</a>
+        <a class="menu" href=".\webs\home.html"><img src=".\pics\icon\home.gif" alt="主页" height="64px"  width="64px"><br>主页</a>
+        <a class="menu" href=".\webs\video.html"><img src=".\pics\icon\home.gif"  alt="视频" height="64px"  width="64px"><br>视频</a>
+        <a class="menu" href=".\webs\passage.html"><img src=".\pics\icon\home.gif" alt="文章" height="64px"  width="64px"><br>文章</a>
+        <a class="menu" id="surb"><img src=".\pics\icon\home.gif" alt="关注我" height="64px"  width="64px"><br>关注我</a>
+        <div id="surbscribe">
+            <a href="https://www.acfun.cn/u/43824214"><img src=".\pics\icon\acfun.gif" alt="关注我" height="16px">A站</a>
+            <a href="https://space.bilibili.com/353449145"><img src=".\pics\icon\bilibili.gif" alt="关注我" height="16px">B站</a>
+            <a href="https://weibo.com/u/7480396703"><img src=".\pics\icon\weibo.gif" alt="关注我" height="16px">微博</a>
+        </div>
+        <script>
+            document.getElementById('surb').addEventListener('click', function(event) {
+            event.preventDefault();
+            var div = document.getElementById('surbscribe');
+            div.style.display = div.style.display === 'none' ? 'block' : 'none';
+            });
+        </script>
     </body>
 </html>
