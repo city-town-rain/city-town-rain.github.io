@@ -1,0 +1,13 @@
+.list>li{
+    text-align: center;
+    margin: 0 40px;
+    width:64px;
+    height:96px;
+    float:left;
+}
+@media screen and (max-width:600px) {          
+    .list>li{
+        float:none;
+        display: block;
+    }
+}

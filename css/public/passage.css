@@ -1,0 +1,18 @@
+.SignName{
+    text-align: right; 
+    font: 14pt 宋体;
+}
+.passageTitle{
+    text-align: center; 
+    font-family:  思源宋体,宋体;
+    font-weight: normal;
+    text-indent: 0;
+}
+.passage{
+    text-indent: 2em;
+    font: 14pt 思源宋体,宋体;
+    background-color: #ffffff90;
+}
+.tips{
+    font-size:12px;
+}
