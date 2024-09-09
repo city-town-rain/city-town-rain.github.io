@@ -3,46 +3,80 @@
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>城镇雨</title>
+        <link rel="stylesheet" href=".\css\main.css">
         <style>
             body{
-                position: relative;
-                top: 200px;
+                position: absolute;
+                top: 50%;
+                left: 20%;
+                transform: translate(-5%,-50%);
+                background-image: url("/pics/bg/indexbg.gif");
             }
-            h1{
-                text-align:center;
-                position:relative;
-                bottom: 10px;
-            }
-            .menu{
-                display: inline-block;
+            .list>li{
                 text-align: center;
-                margin:0 90px;
-            }
-            .menu:hover{
-                box-shadow: 0 0 10px #858585;
+                margin:0 65px;
+                width:64px;
+                height: 96px;
+                float:left;
             }
             #surbscribe{
                 display:none;
+                background-color:#58585863;
+            }
+            #surb{
+                position: relative;
+            }
+            @media screen and (max-width:1150px) {
+                body{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }                
+                h1{
+                    writing-mode:vertical-lr;
+                }
+                .list>li{
+                    float:none;
+                }
+                #surbscribe{
+                    position: absolute;
+                    top:10%;
+                    width:100%;
+                    left:100%;
+                }
             }
         </style>
-        <link rel="stylesheet" href=".\css\main.css">
     </head>
     <body>
         <h1>欢迎来到城镇雨的游戏解说</h1>
-        <a class="menu" href=".\webs\home.html"><img src=".\pics\icon\home.gif" alt="主页" height="64px"  width="64px"><br>主页</a>
-        <a class="menu" href=".\webs\video.html"><img src=".\pics\icon\home.gif"  alt="视频" height="64px"  width="64px"><br>视频</a>
-        <a class="menu" href=".\webs\passage.html"><img src=".\pics\icon\home.gif" alt="文章" height="64px"  width="64px"><br>文章</a>
-        <a class="menu" id="surb"><img src=".\pics\icon\home.gif" alt="关注我" height="64px"  width="64px"><br>关注我</a>
-        <div id="surbscribe">
-            <a href="https://www.acfun.cn/u/43824214"><img src=".\pics\icon\acfun.gif" alt="关注我" height="16px">A站</a>
-            <a href="https://space.bilibili.com/353449145"><img src=".\pics\icon\bilibili.gif" alt="关注我" height="16px">B站</a>
-            <a href="https://weibo.com/u/7480396703"><img src=".\pics\icon\weibo.gif" alt="关注我" height="16px">微博</a>
-        </div>
+        <ul class="list">
+            <li><a href=".\webs\home.html"><img src=".\pics\icon\home.gif" alt="主页" height="64px"  width="64px"><br>主页</a></li>
+            <li><a href=".\webs\video.html"><img src=".\pics\icon\home.gif"  alt="视频" height="64px"  width="64px"><br>视频</a></li>
+            <li><a href=".\webs\audio.html"><img src=".\pics\icon\home.gif" alt="音频" height="64px"  width="64px"><br>音频</a></li>
+            <li><a href=".\webs\passage.html"><img src=".\pics\icon\home.gif" alt="文章" height="64px"  width="64px"><br>文章</a></li>
+            <li id="surb">
+                <a href="#"><img src=".\pics\icon\home.gif" alt="关注我" height="64px"  width="64px"><br>关注我</a>
+                <ul id="surbscribe">
+                    <li><a href="https://www.acfun.cn/u/43824214"><img src=".\pics\icon\acfun.gif" alt="关注我" height="16px" >A站</a></li>
+                    <li><a href="https://space.bilibili.com/353449145"><img src=".\pics\icon\bilibili.gif" alt="关注我" height="16px">B站</a></li>
+                    <li><a href="https://weibo.com/u/7480396703"><img src=".\pics\icon\weibo.gif" alt="关注我" height="16px">微博</a></li>
+                </ul>
+            </li>
+        </ul>
+        
         <script>
             document.getElementById('surb').addEventListener('click', function(event) {
-            event.preventDefault();
-            var div = document.getElementById('surbscribe');
-            div.style.display = div.style.display === 'none' ? 'block' : 'none';
+                event.preventDefault();
+                var sur = document.getElementById('surbscribe');
+                sur.style.display = sur.style.display === 'none' ? 'block' : 'none';
+            });
+            document.getElementById('surb').addEventListener('mouseenter', function(event) {
+                var sur = document.getElementById('surbscribe');
+                sur.style.display = 'block';
+            });
+            document.getElementById('surbscribe').addEventListener('mouseleave', function(event) {
+                var sur = document.getElementById('surbscribe');
+                sur.style.display = 'none';
             });
         </script>
     </body>
