@@ -15,10 +15,3 @@ body{
     max-width: 1000px;
     margin: 0 auto;
 }
-ul{
-    list-style: none;
-    padding-inline-start: 0;              
-}
-li:hover{
-    box-shadow: 0 0 10px #858585;
-}

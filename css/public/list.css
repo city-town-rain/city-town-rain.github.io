@@ -1,7 +1,17 @@
+.list>li{
+    float:left;
+}
 #surbscribe{
     display:none;
     background-color:#58585863;
 }
 #surb{
     position: relative;
+}
+ul{
+    list-style: none;
+    padding-inline-start: 0;              
+}
+li:hover{
+    box-shadow: 0 0 10px #858585;
 }

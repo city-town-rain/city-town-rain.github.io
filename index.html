@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>城镇雨</title>
+        <link rel="stylesheet" href="/css/public/list.css">
         <style>
             body{
                 position: absolute;
@@ -16,18 +17,21 @@
                 margin: 0 65px;
                 width:64px;
                 height:96px;
-                float:left;
             }
-            @media screen and (min-width:601px) and (max-width:1220px) {
+            @media screen and (min-width:901px) and (max-width:1220px) {
+                body{
+                    transform: translate(-10%,-50%);
+                }
                 .list>li{
                     margin: 0 40px;
                 }
             }
-            @media screen and (max-width:600px) {
+            @media screen and (max-width:900px) {
                 body{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    left: 30%;
                 }               
                 h1{
                     writing-mode:vertical-lr;
@@ -43,22 +47,21 @@
                 }
             }
         </style>
-        <link rel="stylesheet" href=".\css\public.css">
-        <link rel="stylesheet" href="/css/public/list.css">
+        <link rel="stylesheet" href="/css/public.css">
     </head>
     <body>
         <h1>欢迎来到城镇雨的游戏解说</h1>
         <ul class="list">
-            <li><a href=".\webs\home.html"><img src=".\pics\icon\home.gif" alt="主页" height="64px"  width="64px"><br>主页</a></li>
-            <li><a href=".\webs\video.html"><img src=".\pics\icon\home.gif"  alt="视频" height="64px"  width="64px"><br>视频</a></li>
-            <li><a href=".\webs\audio.html"><img src=".\pics\icon\home.gif" alt="音频" height="64px"  width="64px"><br>音频</a></li>
-            <li><a href=".\webs\passage.html"><img src=".\pics\icon\home.gif" alt="文章" height="64px"  width="64px"><br>文章</a></li>
+            <li><a href="/webs/home.html"><img src="/pics/icon/home.gif" alt="主页" height="64px"  width="64px"><br>主页</a></li>
+            <li><a href="/webs/video.html"><img src="/pics/icon/home.gif"  alt="视频" height="64px"  width="64px"><br>视频</a></li>
+            <li><a href="/webs/audio.html"><img src="/pics/icon/home.gif" alt="音频" height="64px"  width="64px"><br>音频</a></li>
+            <li><a href="/webs/passage.html"><img src="/pics/icon/home.gif" alt="文章" height="64px"  width="64px"><br>文章</a></li>
             <li id="surb">
-                <a href="#"><img src=".\pics\icon\home.gif" alt="关注我" height="64px"  width="64px"><br>关注我</a>
+                <a href="#"><img src="/pics/icon/home.gif" alt="关注我" height="64px"  width="64px"><br>关注我</a>
                 <ul id="surbscribe">
-                    <li><a href="https://www.acfun.cn/u/43824214"><img src=".\pics\icon\acfun.gif" alt="关注我" height="16px" >A站</a></li>
-                    <li><a href="https://space.bilibili.com/353449145"><img src=".\pics\icon\bilibili.gif" alt="关注我" height="16px">B站</a></li>
-                    <li><a href="https://weibo.com/u/7480396703"><img src=".\pics\icon\weibo.gif" alt="关注我" height="16px">微博</a></li>
+                    <li><a href="https://www.acfun.cn/u/43824214"><img src="/pics/icon/acfun.gif" alt="关注我" height="16px" >A站</a></li>
+                    <li><a href="https://space.bilibili.com/353449145"><img src="/pics/icon/bilibili.gif" alt="关注我" height="16px">B站</a></li>
+                    <li><a href="https://weibo.com/u/7480396703"><img src="/pics/icon/weibo.gif" alt="关注我" height="16px">微博</a></li>
                 </ul>
             </li>
         </ul>
