@@ -1,6 +1,6 @@
 #surbscribe{
     display:none;
-    background-color:#58585863;
+    background-color:#1a19194f;
 }
 #surb{
     position: relative;
@@ -9,6 +9,9 @@ ul{
     list-style: none;
     padding-inline-start: 0;              
 }
-li:hover{
-    box-shadow: 0 0 10px #858585;
+li{
+    cursor:pointer;
+}
+li:not(#indexWeb):hover{
+    background-color: #8585852a;
 }

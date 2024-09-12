@@ -6,23 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
     <link rel="stylesheet" href="/css/public.css">
+    <style>
+        #headMenu{
+            background-color: #004f00;
+            height: 60px;
+        }
+        #menu>li,.list>li{
+            position: relative;
+            text-align: center;
+            line-height: 3;
+            width: 100px;  
+            height:inherit;
+            background-color: inherit;
+            color:white;
+            float: left;
+        }
+        #surbscribe{
+            line-height: 2;
+        }
+        #menuButton{
+            display: none;
+            position: absolute;
+            width:10%;
+            height: inherit;
+            right: 0;
+            background-color: inherit;
+            color: inherit;
+            font: inherit;
+            
+        }
+        @media screen and (max-width:600px) {
+            #menu>li,.list>li{
+                width:100%;
+                text-align: left;
+            }
+            #menuButton{
+                display: inline;
+            }
+           #menu{
+            display: none;
+           }
+        }
+    </style>
     <link rel="stylesheet" href="/css/public/list.css">
 </head>
 <body>
-    <ul class="list">
-        <li><a href="/webs/home.html"><img src="/pics/icon/home.gif" alt="主页" height="16px"  width="16px">主页</a></li>
-        <li><a href="/webs/video.html"><img src="/pics/icon/home.gif"  alt="视频" height="16px"  width="16px">视频</a></li>
-        <li><a href="./webs/audio.html"><img src="/pics/icon/home.gif" alt="音频" height="16px"  width="16px">音频</a></li>
-        <li><a href="./webs/passage.html"><img src="/pics/icon/home.gif" alt="文章" height="16px"  width="16px">文章</a></li>
-        <li id="surb">
-            <a href="#"><img src="/pics/icon/home.gif" alt="关注我" height="16px"  width="16px">关注我</a>
-            <ul id="surbscribe">
-                <li><a href="https://www.acfun.cn/u/43824214"><img src="/pics/icon/acfun.gif" alt="关注我" height="16px" >A站</a></li>
-                <li><a href="https://space.bilibili.com/353449145"><img src="/pics/icon/bilibili.gif" alt="关注我" height="16px">B站</a></li>
-                <li><a href="https://weibo.com/u/7480396703"><img src="/pics/icon/weibo.gif" alt="关注我" height="16px">微博</a></li>
+    <div id="headMenu">
+        <ul class="list">
+            <li id="indexWeb"><a target="_parent" href="/index.html">城镇雨</a><button type="button" id="menuButton">…</button></li>
+            <ul id="menu">
+                <li><a target="_parent" href="/webs/home.html"><img src="/pics/icon/home.gif" alt="主页" height="16px"  width="16px">主页</a></li>
+                <li><a target="_parent" href="/webs/video.html"><img src="/pics/icon/home.gif"  alt="视频" height="16px"  width="16px">视频</a></li>
+                <li><a target="_parent" href="/webs/audio.html"><img src="/pics/icon/home.gif" alt="音频" height="16px"  width="16px">音频</a></li>
+                <li><a target="_parent" href="/webs/passage.html"><img src="/pics/icon/home.gif" alt="文章" height="16px"  width="16px">文章</a></li> 
+                <li id="surb">
+                    <a href="#"><img src="/pics/icon/home.gif" alt="关注我" height="16px"  width="16px">关注我</a>
+                    <ul id="surbscribe">
+                        <li><a target="_parent" href="https://www.acfun.cn/u/43824214"><img src="/pics/icon/acfun.gif" alt="关注我" height="16px" >A站</a></li>
+                        <li><a target="_parent" href="https://space.bilibili.com/353449145"><img src="/pics/icon/bilibili.gif" alt="关注我" height="16px">B站</a></li>
+                        <li><a target="_parent" href="https://weibo.com/u/7480396703"><img src="/pics/icon/weibo.gif" alt="关注我" height="16px">微博</a></li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-    </ul>
-    <script type="text/javascript" src="/script/surbscribe.js"></script>
+        </ul>        
+    </div>
+    <script src="/script/surbscribe.js"></script>
+    <script src="/script/htmlHerf.js"></script>
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function(event) {
+            var menus = document.getElementById('menu');
+            menus.style.display = menus.style.display === 'block' ? 'none' : 'block';
+            var divMenu = document.getElementById('headMenu');
+            divMenu.height = (parseInt(divMenu.style.height) + 300) + 'px';                
+        });
+    </script>
 </body>
 </html>

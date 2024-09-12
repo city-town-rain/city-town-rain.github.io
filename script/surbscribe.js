@@ -1,7 +1,6 @@
 document.getElementById('surb').addEventListener('click', function(event) {
-    event.preventDefault();
     var sur = document.getElementById('surbscribe');
-    sur.style.display = sur.style.display === 'none' ? 'block' : 'none';
+    sur.style.display = sur.style.display === 'block' ? 'none' : 'block';
 });
 document.getElementById('surb').addEventListener('mouseenter', function(event) {
     var sur = document.getElementById('surbscribe');

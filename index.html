@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>城镇雨</title>
         <style>
+            /*窗口居中*/
             body{
-                position: absolute;
-                top: 50%;
-                left: 20%;
-                transform: translate(-5%,-50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-image: url("/pics/bg/indexbg.jpg");
+            }
+            div{
+                color-scheme: light;
             }
             .list>li{
                 text-align: center;
-                margin: 0 65px;
+                margin: 0 4vw;
                 width:64px;
                 height:96px;
                 float:left;
             }
-            @media screen and (min-width:901px) and (max-width:1220px) {
-                body{
-                    transform: translate(-10%,-50%);
-                }
-                .list>li{
-                    margin: 0 40px;
-                }
-            }
-            @media screen and (max-width:900px) {
-                body{
+            /*手机用*/
+            @media screen and (max-width:1000px) { 
+                div{
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    left: 30%;
-                }               
+                    align-items: center; 
+                }
                 h1{
-                    writing-mode:vertical-lr;
+                    writing-mode:vertical-lr;     
                 }
                 .list>li{
                     float:none;
@@ -51,21 +47,24 @@
         <link rel="stylesheet" href="/css/public/list.css">
     </head>
     <body>
-        <h1>欢迎来到城镇雨的游戏解说</h1>
-        <ul class="list">
-            <li><a href="/webs/home.html"><img src="/pics/icon/home.gif" alt="主页" height="64px"  width="64px"><br>主页</a></li>
-            <li><a href="/webs/video.html"><img src="/pics/icon/home.gif"  alt="视频" height="64px"  width="64px"><br>视频</a></li>
-            <li><a href="/webs/audio.html"><img src="/pics/icon/home.gif" alt="音频" height="64px"  width="64px"><br>音频</a></li>
-            <li><a href="/webs/passage.html"><img src="/pics/icon/home.gif" alt="文章" height="64px"  width="64px"><br>文章</a></li>
-            <li id="surb">
-                <a href="#"><img src="/pics/icon/home.gif" alt="关注我" height="64px"  width="64px"><br>关注我</a>
-                <ul id="surbscribe">
-                    <li><a href="https://www.acfun.cn/u/43824214"><img src="/pics/icon/acfun.gif" alt="关注我" height="16px" >A站</a></li>
-                    <li><a href="https://space.bilibili.com/353449145"><img src="/pics/icon/bilibili.gif" alt="关注我" height="16px">B站</a></li>
-                    <li><a href="https://weibo.com/u/7480396703"><img src="/pics/icon/weibo.gif" alt="关注我" height="16px">微博</a></li>
-                </ul>
-            </li>
-        </ul>
+        <div>
+            <h1>欢迎来到城镇雨的游戏解说</h1>
+            <ul class="list">
+                <li><a href="/webs/home.html"><img src="/pics/icon/home.gif" alt="主页" height="64px"  width="64px"><br>主页</a></li>
+                <li><a href="/webs/video.html"><img src="/pics/icon/home.gif"  alt="视频" height="64px"  width="64px"><br>视频</a></li>
+                <li><a href="/webs/audio.html"><img src="/pics/icon/home.gif" alt="音频" height="64px"  width="64px"><br>音频</a></li>
+                <li><a href="/webs/passage.html"><img src="/pics/icon/home.gif" alt="文章" height="64px"  width="64px"><br>文章</a></li>
+                <li id="surb">
+                    <a href="#"><img src="/pics/icon/home.gif" alt="关注我" height="64px"  width="64px"><br>关注我</a>
+                    <ul id="surbscribe">
+                        <li><a href="https://www.acfun.cn/u/43824214"><img src="/pics/icon/acfun.gif" alt="关注我" height="16px" >A站</a></li>
+                        <li><a href="https://space.bilibili.com/353449145"><img src="/pics/icon/bilibili.gif" alt="关注我" height="16px">B站</a></li>
+                        <li><a href="https://weibo.com/u/7480396703"><img src="/pics/icon/weibo.gif" alt="关注我" height="16px">微博</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <script src="/script/surbscribe.js"></script>
+        <script src="/script/htmlHerf.js"></script>
     </body>
 </html>
