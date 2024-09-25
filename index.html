@@ -7,6 +7,7 @@
         <style>
             /*窗口居中*/
             body{
+                position: absolute;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -23,7 +24,7 @@
                 float:left;
             }
             /*手机用*/
-            @media screen and (max-width:1000px) { 
+            @media screen and (max-device-width:600px) { 
                 div{
                     display: flex;
                     justify-content: center;
@@ -51,11 +52,11 @@
             <h1>欢迎来到城镇雨的游戏解说</h1>
             <ul class="list">
                 <li><a href="/webs/home.html"><img src="/pics/icon/home.gif" alt="主页" height="64px"  width="64px"><br>主页</a></li>
-                <li><a href="/webs/video.html"><img src="/pics/icon/home.gif"  alt="视频" height="64px"  width="64px"><br>视频</a></li>
-                <li><a href="/webs/audio.html"><img src="/pics/icon/home.gif" alt="音频" height="64px"  width="64px"><br>音频</a></li>
-                <li><a href="/webs/passage.html"><img src="/pics/icon/home.gif" alt="文章" height="64px"  width="64px"><br>文章</a></li>
+                <li><a href="/webs/video.html"><img src="/pics/icon/video.gif"  alt="视频" height="64px"  width="64px"><br>视频</a></li>
+                <li><a href="/webs/audio.html"><img src="/pics/icon/audio.gif" alt="音频" height="64px"  width="64px"><br>音频</a></li>
+                <li><a href="/webs/passage.html"><img src="/pics/icon/passage.gif" alt="文章" height="64px"  width="64px"><br>文章</a></li>
                 <li id="surb">
-                    <a href="#"><img src="/pics/icon/home.gif" alt="关注我" height="64px"  width="64px"><br>关注我</a>
+                    <a href="#"><img src="/pics/icon/subscribe.gif" alt="关注我" height="64px"  width="64px"><br>关注我</a>
                     <ul id="surbscribe">
                         <li><a href="https://www.acfun.cn/u/43824214"><img src="/pics/icon/acfun.gif" alt="关注我" height="16px" >A站</a></li>
                         <li><a href="https://space.bilibili.com/353449145"><img src="/pics/icon/bilibili.gif" alt="关注我" height="16px">B站</a></li>
@@ -65,6 +66,5 @@
             </ul>
         </div>
         <script src="/script/surbscribe.js"></script>
-        <script src="/script/htmlHerf.js"></script>
     </body>
 </html>
