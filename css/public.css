@@ -25,6 +25,12 @@ iframe{
     width: inherit;
     height: inherit;
 }
+#header-container
+{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+} 
 .webs{
     max-width: 1000px;
     margin: 0 auto;

@@ -1,6 +1,7 @@
 #surbscribe{
     display:none;
     background-color:#1a19194f;
+    z-index: 2;
 }
 #surb{
     position: relative;
