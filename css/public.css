@@ -29,3 +29,12 @@ div.webs{
     padding-top: 60px;
     margin: 0 auto;
 }
+.webs>.links{
+    display: block;
+    text-align: center;
+    height: 50px;
+    background-color: green;
+    margin: 10px 0;
+    line-height: 2.5;
+    width:inherit;
+}
