@@ -4,33 +4,59 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>视频</title>
         <link rel="icon" href="/pics/icon/video.gif">
+        <link rel="stylesheet" href="https://unpkg.com/video.js/dist/video-js.css">
         <style>
             .webs>div{
                 margin: 10px 0;
             }
-            video{
-                height:60%;
-                width:60%;
+            .webs>.links{
+                width:550px;
+            }
+            .video-js{
+                position:absolute;
+                padding-top:50vh;
+                right: 0;
             }
         </style>
         <link rel="stylesheet" href="/css/public.css">
+        <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+        <script src="https://unpkg.com/hls.js@latest"></script>
     </head>
     <body>
         <header id="header-container"></header>
         <script src="/script/headers.js"></script>
         <div class="webs">
-            <div>
-                <p><a href="https://www.bilibili.com/video/BV1jq4y1y7Zk/">晴空雨3：第一集</a></p>
-                <video src="/vids/晴空雨3_1.mp4" controls></video>
+            <div class="links">
+                <p><a href="https://www.bilibili.com/video/BV1jq4y1y7Zk/">晴空雨3：第一集</a><button class="qky" data_video="/vids/m3u8s/qky3_1/qky3_1.m3u8">播放视频</button></p>
             </div>
-            <div>            
-                <p><a href="https://www.bilibili.com/video/BV1Lq4y1b7ad/">晴空雨3：第二集</a></p>
-                <video src="/vids/晴空雨3_2.mp4" controls></video>
+            <div class="links">            
+                <p><a href="https://www.bilibili.com/video/BV1Lq4y1b7ad/">晴空雨3：第二集</a><button class="qky" data_video="/vids/m3u8s/qky3_2/qky3_2.m3u8">播放视频</button></p>
             </div>
-            <div>
-                <p><a href="https://www.bilibili.com/video/BV1nu411X7WX/">晴空雨3：第三集</a></p>
-                <video src="/vids/晴空雨3_3.mp4" controls></video>
+            <div class="links">
+                <p><a href="https://www.bilibili.com/video/BV1nu411X7WX/">晴空雨3：第三集</a><button class="qky" data_video="/vids/m3u8s/qky3_3/qky3_3.m3u8">播放视频</button></p>       
             </div>
+            <video id="myVideo" class="video-js vjs-big-play-centered" width="400px" controls></video>
+
         </div>
     </body>
+    <script>    
+        var myVideo = videojs('myVideo',{
+            bigPlayButton : true, 
+            textTrackDisplay : false, 
+            posterImage: false,
+            errorDisplay : false,
+        });
+        document.querySelectorAll('.qky').forEach(function(button){
+            button.addEventListener('click', function() {
+                var videoUrl = this.getAttribute('data_video'); // 获取视频URL
+                console.log(videoUrl);
+                myVideo.src({
+                  src: videoUrl,
+                  type: 'application/x-mpegURL',
+                  provider: 'hls'
+                });
+                // myVideo.play(); 播放视频
+            });
+        })
+    </script>
 </html>

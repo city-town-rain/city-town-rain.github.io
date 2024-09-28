@@ -34,7 +34,7 @@ div.webs{
     text-align: center;
     height: 50px;
     background-color: green;
+    color: #fff;
     margin: 10px 0;
     line-height: 2.5;
-    width:inherit;
 }
