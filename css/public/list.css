@@ -1,6 +1,6 @@
 #surbscribe{
     display:none;
-    background-color:#1a19194f;
+    background-color:rgba(26, 25, 25, 0.31);
 }
 #surb{
     position: relative;
@@ -13,7 +13,7 @@ li:not(.tips>*){
     cursor:pointer;
 }
 li:not(#indexWeb,.tips>*):hover{
-    background-color: #8585852a;
+    background-color: rgba(133, 133, 133, 0.165);
 }
 li>a{
     display: block;
