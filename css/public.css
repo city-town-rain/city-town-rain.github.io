@@ -27,10 +27,9 @@ div.webs{
     max-width: 1000px;
     position: relative;
     padding-top: 60px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
-.webs>.links{
-    display: block;
+.webs .links{
     text-align: center;
     height: 50px;
     background-color: green;

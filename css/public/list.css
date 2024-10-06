@@ -9,10 +9,10 @@ ul{
     list-style: none;
     padding-inline-start: 0;              
 }
-li{
+li:not(.tips>*){
     cursor:pointer;
 }
-li:not(#indexWeb):hover{
+li:not(#indexWeb,.tips>*):hover{
     background-color: #8585852a;
 }
 li>a{

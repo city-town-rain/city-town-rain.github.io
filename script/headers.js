@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
           var buttons = document.createElement('script');  
           buttons .src = '/script/buttons.js';  
           document.body.appendChild(buttons);  
-          var htmlHerf = document.createElement('script');  
-          htmlHerf.src = '/script/htmlHerf.js';  
-          document.head.appendChild(htmlHerf);  
+          // var htmlHerf = document.createElement('script');  
+          // htmlHerf.src = '/script/htmlHerf.js';  
+          // document.head.appendChild(htmlHerf);  
       }
   };
   xhr.send();
-})
+});

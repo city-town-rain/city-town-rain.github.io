@@ -2,7 +2,7 @@
     text-align: right; 
     font: 14pt 宋体;
 }
-.passageTitle{
+.passageTitle,h1,h2{
     text-align: center; 
     font-family:  思源宋体,宋体;
     font-weight: normal;
@@ -15,4 +15,8 @@
 }
 .tips{
     font-size:12px;
+}
+.infos{
+    border:2px solid #ffc0cb;
+    background-color:#ffc0cb;
 }
