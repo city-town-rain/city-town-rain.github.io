@@ -15,18 +15,33 @@
       .imgs{
         display: inline-block;
         text-indent: 0;
+        text-align: center;  
       }
-      .imgs img:not(#safs){
+      .imgs>img:not(#safs){
+        max-width: 100%;        
         height: 200px;
       }
       .MediaTitle{
         color: #000;
         font-size: 12px;
       }
+      .webVideo>iframe{
+        height: 300px;
+        width:50%;
+      }
       .webs a.links{
         line-height: normal;
         background-color: rgba(0, 0, 0, 0);
         color:#259191;
+      }
+      @media screen and (max-device-width:600px) {
+        .imgs{
+          display: block; 
+        }
+        .webVideo>iframe{
+          height: 100%;
+          width:80%;
+        }
       }
     </style>
     <link rel="stylesheet" href="/css/public/passage.css">
@@ -74,6 +89,9 @@
         <div class="medias">
           <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_movs.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
+            <p class="MediaTitle">《可可的魔伞》剧照</p>
+          </div>
+          <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_movs2.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
             <p class="MediaTitle">《可可的魔伞》剧照</p>
           </div>          
@@ -82,7 +100,13 @@
         <div class="medias">
           <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_movs3.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
+            <p class="MediaTitle">《可可的魔伞》剧照</p>
+          </div>
+          <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_movs4.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
+            <p class="MediaTitle">《可可的魔伞》剧照</p>
+          </div>
+          <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_movs5.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
             <p class="MediaTitle">《可可的魔伞》剧照</p>
           </div>
@@ -91,7 +115,13 @@
         <div class="medias">
           <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_movs6.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
+            <p class="MediaTitle">《可可的魔伞》剧照</p>
+          </div>
+          <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_movs7.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
+            <p class="MediaTitle">《可可的魔伞》剧照</p>
+          </div>
+          <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_movs8.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
             <p class="MediaTitle">《可可的魔伞》剧照</p>
           </div>
@@ -103,6 +133,9 @@
         <div class="medias">
           <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_movs9.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
+            <p class="MediaTitle">《可可的魔伞》剧照</p>
+          </div>
+          <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_movs10.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
             <p class="MediaTitle">《可可的魔伞》剧照</p>
           </div>
@@ -110,8 +143,14 @@
         <div>影片穿插了动画，动画内容是扣子的漫画，内容是一个城市被一个巨型机器人控制男主拯救城市的故事，在男主拯救城市的时候突然摔倒，此时回到显示当中扣子出现意外，（徐）可可用魔伞解救了扣子，之后扣子拿着画给可可，之后动画中男主也是被魔伞纠结，收获了友情。这个部分使用了蒙太奇的手法，加强了动画和真人不同次元的交流和呼应。</div>
 				<div class="medias">
 					<div class="imgs">
-						<img src="/pics/passages/magicUmbrella/kkdms_anis.gif" alt="可可的魔伞动画部分" title="可可的魔伞动画部分" width="300px">
+						<img src="/pics/passages/magicUmbrella/kkdms_anis.gif" alt="可可的魔伞动画部分" title="可可的魔伞动画部分">
+            <p class="MediaTitle">《可可的魔伞》动画部分</p>
+          </div>
+          <div class="imgs">
 						<img src="/pics/passages/magicUmbrella/kkdms_anis2.gif" alt="可可的魔伞动画部分" title="可可的魔伞动画部分">
+            <p class="MediaTitle">《可可的魔伞》动画部分</p>
+          </div>
+          <div class="imgs">
 						<img src="/pics/passages/magicUmbrella/kkdms_anis3.gif" alt="可可的魔伞动画部分" title="可可的魔伞动画部分">
 						<p class="MediaTitle"> 《可可的魔伞》动画部分</p>
 					</div>
@@ -121,17 +160,36 @@
         <div>只可惜，由于是上海美术电影制片厂第一次制作真人电影，剧情略显平淡，不够紧凑，上映次数少，此影片除了在影院上映过两次，在电视上播出了一次，直到2023年之前，只有腾讯视频的一小部分片段，差点成为了lostmedia。</div>
         <h2>四、电影技术</h2>
         <div>该电影是继《宝莲灯》后，上美影厂推出体现高科技水平的真人儿童电影。电影《宝莲灯》推出了强大的配音阵容，以及音乐的强大魅力，使这部影片成为了上世纪90年代末的巅峰动画电影。2000年的《可可的魔伞》，上海美术电影制片场推出了中国最有名的导演彭小莲和强大的特效团队呈现出高科技水准的真人电影。</div>
+        <div>该电影上映于2000年。是当年电脑特效的开山之年，同时期《西游记续集》也是电脑特效，大大缩短了制作时间，降低了制作成本。同时这是我国第一个使用了3D建模的特效的电影，建模了可可的伞。同时该电影也用了动作捕捉（用的是鱼），但是当年的动作捕捉在电影领域里起步不太成熟。这则个电影成为了最找的一批的工业化电影。</div>
+        <div class="medias">
+          <div class="imgs">
+            <img src="/pics/passages/magicUmbrella/kkdms_sence.gif" alt="可可的魔伞幕后拍摄" title="可可的魔伞幕后拍摄">
+            <p class="MediaTitle">《可可的魔伞》幕后拍摄</p>				 
+          </div>
+          <div class="imgs">
+            <img src="/pics/passages/magicUmbrella/xyj2000.gif" alt="西游记续集" title="西游记续集">
+            <p class="MediaTitle">《西游记续集》片头</p>				 
+          </div>
+        </div>
         <div>同时，影片使用了DTS和影院的数字音效，为观影者带来了成功的视听体验。</div>
         <h2>五、题外话</h2>
         <div>2000年，回忆当中悉尼奥运会开始，Microsoft发布Windows 2000。</div>
-        <div>科技水平日新月异，在《可可的魔伞》当中，可可妈使用的笔记本非常厚重，手机还是2G普及的时代。</div>
+        <div>科技水平日新月异，在《可可的魔伞》当中，可可妈使用的笔记本非常厚重，手机还是2G普及的时代。到2007年乔布斯发布iPhone，智能手机成为了像一个电脑一样的东西，至于笔记本，在2008年前后越来越轻薄，不想电影里的笨重。</div>
 				<div class="medias">
 					<div class="imgs">
-					<img src="/pics/passages/magicUmbrella/kkdms_movs7.gif" alt="可可的魔伞剧照" title="可可的魔伞动画部分">
-          <p class="MediaTitle">可可的母亲在咖啡厅里一边用着笔记本，一边用手机接电话，当时很时髦</p>				 
+            <img src="/pics/passages/magicUmbrella/kkdms_movs7.gif" alt="可可的魔伞剧照" title="可可的魔伞动画部分">
+            <p class="MediaTitle">可可的母亲在咖啡厅里一边用着笔记本，一边用手机接电话，当时很时髦</p>
+					</div>	
+          <div class="imgs">
+            <img src="/pics/passages/magicUmbrella/iPhone_2007.gif" alt="苹果手机" title="可可的魔伞动画部分苹果手机">
+            <p class="MediaTitle">iPhone开启了智能手机的新时代</p>
+					</div>
+          <div class="imgs">
+            <img src="/pics/passages/magicUmbrella/macbook_2008.gif" alt="轻薄笔记本" title="轻薄笔记本">
+            <p class="MediaTitle">MacBook让轻薄本更普及</p>
 					</div>
           <div class="webVideo">
-            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=45709681&bvid=BV1zb411v7uZ&cid=80071678&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="300px" width="500px"></iframe>
+            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=45709681&bvid=BV1zb411v7uZ&cid=80071678&p=1&autoplay=0&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
             <p class="MediaTitle">上世纪与可可母亲同款笔记本</p>              
           </div>
 				</div>
@@ -142,23 +200,34 @@
             <p class="MediaTitle">当时厨房里了人通过BP机讨论问题</p>				 
 					</div>
           <div class="webVideo">
-            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=979267145&bvid=BV1H44y1n7oM&cid=517884904&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="300px" width="500px"></iframe> 
+            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=979267145&bvid=BV1H44y1n7oM&cid=517884904&p=1&autoplay=0&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe> 
             <p class="MediaTitle">现在对BP机的评测</p>				 
           </div>
         </div>
-        <div>该电影上映于2000年。是当年电脑特效的开始，同时期《西游记续集》也是电脑特效，同时该电影也用了动作捕捉，但是这是最初级的动作捕捉，则个电影成为了最找的一批工业电影。</div>
+        <div>2000年时，当年电影的动作捕捉技术不成熟，直到2008年的《猩球崛起》的出现，动作捕捉技术逐渐成熟。特效方面，2000年当时《可可的魔伞》电脑的特效不够成熟，时中国特效的开始。在后来的技术加持下啊，电影的特效越来越发达，成为了工业化的开端。</div>
         <div class="medias">
           <div class="imgs">
             <img src="/pics/passages/magicUmbrella/kkdms_sence.gif" alt="可可的魔伞幕后拍摄" title="可可的魔伞幕后拍摄">
             <p class="MediaTitle">《可可的魔伞》幕后拍摄</p>				 
           </div>
           <div class="imgs">
-            <img src="/pics/passages/magicUmbrella/xyj2000.gif" alt="西游记续集" title="西游记续集">
-            <p class="MediaTitle">《西游记续集》片头</p>				 
+            <img src="/pics/passages/magicUmbrella/xqjq_sence.gif" alt="猩球崛起幕后动捕" title="猩球崛起幕后动捕">
+            <p class="MediaTitle">《猩球崛起》幕后动捕</p>				 
           </div>
           <div class="webVideo">
-            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=726407634&bvid=BV1GS4y1b7n7&cid=718872564&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="300px" width="500px"></iframe>
+            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=726407634&bvid=BV1GS4y1b7n7&cid=718872564&p=1&autoplay=0&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
             <p class="MediaTitle">现在电影3D建模的隐形人特效流程</p>
+          </div>
+        </div>
+        <div>电影中，戏曲里的申申作为太空人，去解救困在月亮里的白素贞。当时飞天是我们遥不可及的梦想，直到2003年，我们实现了。</div>
+        <div class="medias">
+          <div class="imgs">
+            <img src="/pics/passages/magicUmbrella/kkdms_movs5.gif" alt="可可的魔伞剧照" title="可可的魔伞剧照">
+            <p class="MediaTitle">太空人解救白素贞</p>
+          </div>
+          <div class="imgs">
+            <img src="/pics/passages/magicUmbrella/speaceflight.gif" alt="飞船登天" title="飞船登天">
+            <p class="MediaTitle">飞船登天</p>				 
           </div>
         </div>
         <div>时代正在进步，科技正在变化，可是这些电影还在回忆中游荡。</div>
